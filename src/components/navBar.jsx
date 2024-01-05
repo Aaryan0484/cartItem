@@ -9,6 +9,7 @@ function navBar() {
         <Link to='/'>Shop</Link>
         <Link to='/cart'><ShoppingCart /></Link>
       </div>
+      
     </div>
   )
 }
