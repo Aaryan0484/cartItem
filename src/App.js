@@ -1,9 +1,18 @@
 import './App.css';
-
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import NavBar from "./components/navBar"
+import Shop from './pages/shop/shop';
+import Cart from './pages/cart/cart';
 function App() {
   return (
     <div className="App">
-      <h1>Hi</h1>
+      <Router>
+        <NavBar />
+      <Routes>
+        <Route path='/' element={<Shop />} />
+        <Route path='/cart' element={<Cart />} />
+      </Routes>
+      </Router>
     </div>
   );
 }
