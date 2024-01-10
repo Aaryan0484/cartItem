@@ -13,7 +13,10 @@
   display: flex;
   align-items: center;
 }
-
+.logo {
+  color: 'white';
+  
+}
 .links a {
   text-decoration: none;
   color: #bcbdbc;
@@ -22,4 +25,18 @@
 }
 .links a:hover{
   color: whitesmoke;
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-count {
+  background-color: #fff;
+  color: #333;
+  position: absolute;
+  border-radius: 40% ;
+  padding: 0px 2.5px;
+  top: -19px;
+  right: -21px;
 }
