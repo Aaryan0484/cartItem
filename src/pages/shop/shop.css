@@ -1,48 +1,38 @@
 .shopTitle {
-  margin-top: 100px;
+  margin-top: 20px; /* Adjust the margin as needed for smaller devices */
   text-align: center;
-  font-size: 40px;
+  font-size: 24px; /* Adjust the font size for smaller devices */
 }
+
 .products {
   width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+  display: grid; /* Use a grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum and maximum size */
+  gap: 20px; /* Adjust the gap between products */
 }
 
 .product {
   border-radius: 15px;
-  width: 300px;
-  height: 350px;
-  margin: 100px;
+  margin: 20px; /* Adjust margin for spacing between products */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .product img {
-  width: 400px;
+  width: 100%; /* Make images fill the container */
 }
 
 .product .description {
   text-align: center;
 }
 
-.product:hover {
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
-
 .addToCartBttn {
   background-color: transparent;
   border: 2px solid rgb(19, 19, 19);
   min-width: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
   border-radius: 15px;
 }
 
